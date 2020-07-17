@@ -13,7 +13,7 @@ public class Main {
 
     private static int stepCount = 70; //количество случайных предвежений фишок при генерации поля
 
-    private static int sideSize = 6; // размер поля
+    private static int sideSize = 3; // размер поля
 
     private static boolean isReadFromStream = true;
 
@@ -37,9 +37,9 @@ public class Main {
             System.out.println("Решение не найдено");
             return;
         } else {
-//            for (State s : res) {
-//                System.out.println(s.toString());
-//            }
+            for (State s : res) {
+                System.out.println(s.toString());
+            }
         }
 
         System.out.println("Time: " + time + "ms");
